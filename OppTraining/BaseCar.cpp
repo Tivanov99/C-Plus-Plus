@@ -11,5 +11,6 @@ public:
 	string Model;
 	double Price;
 	string Make;
+	double Distance;
 
 };
