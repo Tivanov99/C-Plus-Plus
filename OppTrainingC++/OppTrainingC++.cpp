@@ -4,95 +4,9 @@
 #include <iostream>
 using namespace std;
 
-class Vehicle {
-public:
-	int HorsePower;
-	int Year;
-	string Model;
-	virtual ~Vehicle() {
-		cout << "The object Vehicle is destroyed\n";
-	};
-	void Accelerate() {
-		cout << "Accelerating\n";
-	};
-	void Brake() {
-		cout << "Braking\n";
-	};
-	void EngineStart() {
-		cout << "Engine Starts\n";
-	}
-	void EngineStop() {
-		cout << "Engine Stops\n";
-	}
-};
-class FourDrive {
-public:
-	void TurnOnFourDrive() {
-		cout << "Four Drive";
-	}
-};
-
-class Car : public Vehicle, public FourDrive {
-	public:
-		Car(int horsePower)
-		{
-			cout << "created\n";
-			HorsePower = horsePower;
-		}
-		Car(const Car &c) {
-			cout << "created coppy";
-		}
-		virtual ~Car() {
-			cout << "The object Car is destroyed\n";
-		}
-};
-
-
-class Point
-{
-public:
-
-	Point() {
-
-	};
-
-	string stringData;
-	int x, y;
-	Point(int X, int Y, string data) { x = X; y = Y; stringData = data; };
-	int getX() { return x; }
-	int getY() { return y; }
-};
-
 int main()
 {
-	/*Car car = { 231 };*/
-	/*Point p1{12,13,"test"};
-	Point p2 = (p1);
-	cout << "x = " << p2.getX() << " y = " << p2.getY() << p2.stringData << "\n";
-
-	p1.x = 9;
-	p1.stringData = "change";
-	cout << "x = " << p2.getX() << " y = " << p2.getY() <<p2.stringData << "\n";*/
-
-
-	Car car{ 10 };
-	cout << car.HorsePower << "\n";
-
-
-	/*Car *test = new Car(333);
-	delete test;
-
-	Car car(231);
-	cout <<car.HorsePower << "\n";
-
-	Car secondCar(car);
-	cout << secondCar.HorsePower << "\n";
-
-	car.HorsePower = 999;
-
-	cout << car.HorsePower << " This is the first car" << "\n";
-
-	cout << secondCar.HorsePower << " This is the second car" << "\n";*/
+	
 }
 
 
