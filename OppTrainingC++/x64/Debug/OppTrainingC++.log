@@ -1,0 +1,15 @@
+﻿  Animal.cpp
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(6,9): error C2061: syntax error: identifier 'string'
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(9,9): error C2061: syntax error: identifier 'string'
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(9,8): error C2535: 'Animal::Animal(void)': member function already defined or declared
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(6): message : see declaration of 'Animal::Animal'
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(17,9): error C3646: 'Name': unknown override specifier
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(17,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(7,3): error C2065: 'Name': undeclared identifier
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(7,10): error C2065: 'name': undeclared identifier
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(10,3): error C2065: 'Name': undeclared identifier
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(10,10): error C2065: 'name': undeclared identifier
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(11,9): error C2065: 'age': undeclared identifier
+C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\Animal.h(14,3): error C2065: 'cout': undeclared identifier
+  OppTrainingC++.cpp
+  Generating Code...

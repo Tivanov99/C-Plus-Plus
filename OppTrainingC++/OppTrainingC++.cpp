@@ -1,29 +1,5 @@
-// OppTrainingC++.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 using namespace std;
-
-class Animal {
-public:
-	Animal(string name) {
-		Name = name;
-	};
-	Animal(string name, int age) {
-		Name = name;
-		Age = age;
-	};
-	void SayHello() {
-		cout << "Hello\n";
-	}
-	virtual void SayYouName() = 0;
-	string Name;
-	int Age;
-	~Animal() {
-
-	};
-};
-
 
 int main()
 {
