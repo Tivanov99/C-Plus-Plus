@@ -4,6 +4,19 @@
 #include <iostream>
 using namespace std;
 
+class Animal {
+public:
+	Animal() {
+
+	};
+	void SayHello() {
+		cout << "Hello\n";
+	}
+	virtual void SayYouName() = 0;
+	string Name;
+};
+
+
 int main()
 {
 
