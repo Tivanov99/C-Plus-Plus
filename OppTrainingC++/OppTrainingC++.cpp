@@ -6,14 +6,22 @@ using namespace std;
 
 class Animal {
 public:
-	Animal() {
-
+	Animal(string name) {
+		Name = name;
+	};
+	Animal(string name, int age) {
+		Name = name;
+		Age = age;
 	};
 	void SayHello() {
 		cout << "Hello\n";
 	}
 	virtual void SayYouName() = 0;
 	string Name;
+	int Age;
+	~Animal() {
+
+	};
 };
 
 
