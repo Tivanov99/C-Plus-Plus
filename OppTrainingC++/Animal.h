@@ -8,9 +8,10 @@ public:
 	Animal(string name) {
 		Name = name;
 	};
-	Animal(string name, int age) {
+	Animal(string name, int age, bool isVaccinated = false) {
 		Name = name;
 		Age = age;
+		Vaccinated = isVaccinated;
 	};
 	void SayHello() {
 		cout << "Hello\n";
@@ -20,6 +21,9 @@ public:
 	}
 	int GetAge() {
 		return Age != 0 ? Age : 0;
+	}
+	bool IsVaccinated() {
+		return Vaccinated;
 	}
 	virtual void SayYouName() = 0;
 	~Animal() {
