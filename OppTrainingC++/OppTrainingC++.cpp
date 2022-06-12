@@ -4,15 +4,7 @@ using namespace std;
 
 int main()
 {
-	enum Hunt
-	{
-		Loww, Mediumm, Highh, Professionall
-	}; 
-
-	int da = Medium;
-	
-
-	cout << da;
+	cout << Low;
 }
 
 
