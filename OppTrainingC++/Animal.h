@@ -52,13 +52,15 @@ public:
 			if (FoodLevel == 100) {
 				cout << "The animal is fully fed!";
 			}
-			else if ((FoodLevel + foodValue) >= 100) {
-				FoodLevel = 100;
-				cout << "The animal is fed!";
-			}
-			else
-			{
-				FoodLevel += foodValue;
+			else {
+				if ((FoodLevel + foodValue) >= 100) {
+					FoodLevel = 100;
+				}
+				else
+				{
+					FoodLevel += foodValue;
+				}
+					cout << "The animal is fed!";
 			}
 		}
 	}
