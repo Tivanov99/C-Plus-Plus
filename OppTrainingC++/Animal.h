@@ -5,10 +5,11 @@ using namespace std;
 
 class Animal {
 public:
-	Animal(string name, int age, bool isVaccinated = false) {
+	Animal(string name, int age, double weight,bool isVaccinated = false) {
 		Name = name;
 		Age = age;
 		Vaccinated = isVaccinated;
+		Weight = weight;
 	};
 	Animal(Animal& a) {
 		Name = a.Name;
@@ -21,6 +22,9 @@ public:
 	int GetAge() {
 		return Age != 0 ? Age : 0;
 	}
+	double GetWeight() {
+		return Weight;
+	}
 	bool IsVaccinated() {
 		return Vaccinated;
 	}
@@ -31,5 +35,6 @@ private:
 	string Name;
 	int Age;
 	bool Vaccinated;
+	double Weight;
 };
 
