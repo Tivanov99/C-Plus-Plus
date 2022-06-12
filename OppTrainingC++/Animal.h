@@ -5,13 +5,15 @@ using namespace std;
 
 class Animal {
 public:
-	Animal(string name) {
-		Name = name;
-	};
 	Animal(string name, int age, bool isVaccinated = false) {
 		Name = name;
 		Age = age;
 		Vaccinated = isVaccinated;
+	};
+	Animal(Animal& a) {
+		Name = a.Name;
+		Age = a.Age;
+		Vaccinated = a.Vaccinated;
 	};
 	string GetName() {
 		return Name;
