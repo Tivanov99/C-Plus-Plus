@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\CaTFamily">
+      <UniqueIdentifier>{1803b7f1-feb5-40e8-8d80-9349d9faa4d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AnimalFactory">
+      <UniqueIdentifier>{e4448f74-ac1c-4de1-bb31-34fe13c6afd2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OppTrainingC++.cpp">
@@ -30,15 +36,27 @@
     <ClCompile Include="HuntingLevel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tiger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimalFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Puma.h">
+    <ClInclude Include="Carnivores.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Carnivores.h">
+    <ClInclude Include="Puma.h">
+      <Filter>Header Files\CaTFamily</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimalFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
