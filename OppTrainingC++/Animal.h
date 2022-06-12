@@ -47,7 +47,7 @@ public:
 	~Animal() {
 
 	};
-private:
+protected:
 	string Name;
 	int Age;
 	bool Vaccinated;
