@@ -13,9 +13,6 @@ public:
 		Age = age;
 		Vaccinated = isVaccinated;
 	};
-	void SayHello() {
-		cout << "Hello\n";
-	}
 	string GetName() {
 		return Name;
 	}
@@ -25,7 +22,6 @@ public:
 	bool IsVaccinated() {
 		return Vaccinated;
 	}
-	virtual void SayYouName() = 0;
 	~Animal() {
 
 	};
