@@ -12,7 +12,10 @@ public:
 		, Carnivores(huntingLevel, levelOfDanger) {
 	};
 	void GetAnimalType() {
-		cout << Name << " Is " << "Puma!";
+		cout << Name << " Is " << "Puma!\n";
+	}
+	void MakeSpecialSound() {
+		cout << "Roar\n";
 	}
 };
 

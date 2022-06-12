@@ -33,7 +33,7 @@ public:
 	}
 	void Play() {
 		if (FoodLevel <= 10) {
-			cout << Name << " need some food!";
+			cout << Name << " need some food!\n";
 		}
 		else
 		{
@@ -41,16 +41,16 @@ public:
 			if ((HappyLevel + 10) <= 100) {
 				HappyLevel += 10;
 			};
-			cout << Name << " is Playing! His Happy level is " << HappyLevel;
+			cout << Name << " is Playing! His Happy level is " << HappyLevel << "\n";
 		}
 	}
 	void Feed(int foodValue) {
 		if (foodValue <= 0) {
-			cout << "You cannot feed animal with negative value of food!";
+			cout << "You cannot feed animal with negative value of food!\n";
 		}
 		else {
 			if (FoodLevel == 100) {
-				cout << "The animal is fully fed!";
+				cout << "The animal is fully fed!\n";
 			}
 			else {
 				if ((FoodLevel + foodValue) >= 100) {
@@ -60,11 +60,12 @@ public:
 				{
 					FoodLevel += foodValue;
 				}
-				cout << "The animal is fed!";
+				cout << "The animal is fed!\n";
 			}
 		}
 	}
 	virtual void GetAnimalType() = 0;
+	virtual void MakeSpecialSound()= 0;
 	~Animal() {
 
 	};

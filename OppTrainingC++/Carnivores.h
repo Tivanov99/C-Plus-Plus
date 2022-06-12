@@ -14,12 +14,12 @@ public:
 	void ShowHuntingLevel() {
 		switch (HuntingLevel)
 		{
-		case 0: cout << "Low"; break;
-		case 1: cout << "Medium"; break;
-		case 2: cout << "High"; break;
-		case 3: cout << "Professional"; break;
+		case 0: cout << "Low\n"; break;
+		case 1: cout << "Medium\n"; break;
+		case 2: cout << "High\n"; break;
+		case 3: cout << "Professional\n"; break;
 		default:
-			cout << "Something wrong with hunting level"; break;
+			cout << "Something wrong with hunting level\n"; break;
 		}
 	};
 
