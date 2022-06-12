@@ -5,7 +5,8 @@ using namespace std;
 
 class Animal {
 public:
-	Animal(string name, int age, double weight, int happyLevel, int foodLevel, bool isVaccinated = false) {
+	Animal(string name, int age, double weight, int happyLevel,
+		int foodLevel, bool isVaccinated = false) {
 		Name = name;
 		Age = age;
 		Vaccinated = isVaccinated;
@@ -30,10 +31,9 @@ public:
 	bool IsVaccinated() {
 		return Vaccinated;
 	}
-	virtual void GetAnimalType() = 0;
 	void Play() {
 		if (FoodLevel <= 10) {
-			cout<<Name << " need some food!";
+			cout << Name << " need some food!";
 		}
 		else
 		{
@@ -44,6 +44,25 @@ public:
 			cout << Name << " is Playing! His Happy level is " << HappyLevel;
 		}
 	}
+	void Feed(int foodValue) {
+		if (foodValue <= 0) {
+			cout << "You cannot feed animal with negative value of food!";
+		}
+		else {
+			if (FoodLevel == 100) {
+				cout << "The animal is fully fed!";
+			}
+			else if ((FoodLevel + foodValue) >= 100) {
+				FoodLevel = 100;
+				cout << "The animal is fed!";
+			}
+			else
+			{
+				FoodLevel += foodValue;
+			}
+		}
+	}
+	virtual void GetAnimalType() = 0;
 	~Animal() {
 
 	};
