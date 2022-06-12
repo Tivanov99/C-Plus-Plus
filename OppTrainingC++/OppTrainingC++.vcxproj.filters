@@ -24,12 +24,21 @@
     <ClCompile Include="Puma.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Carnivores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HuntingLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Puma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Carnivores.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
