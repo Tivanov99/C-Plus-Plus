@@ -60,7 +60,7 @@ public:
 				{
 					FoodLevel += foodValue;
 				}
-					cout << "The animal is fed!";
+				cout << "The animal is fed!";
 			}
 		}
 	}

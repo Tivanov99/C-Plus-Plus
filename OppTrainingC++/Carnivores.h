@@ -11,10 +11,7 @@ public:
 		HuntingLevel = huntingLevel;
 		DangerLevel = dangerLevel;
 	};
-	int GetHuntingLevelAsNumber() {
-		return HuntingLevel;
-	};
-	void ShowHuntingLevelName() {
+	void ShowHuntingLevel() {
 		switch (HuntingLevel)
 		{
 		case 0: cout << "Low"; break;
