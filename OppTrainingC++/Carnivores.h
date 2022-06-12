@@ -6,9 +6,10 @@ using namespace std;
 class Carnivores
 {
 public:
-	Carnivores(int huntingLevel)
+	Carnivores(int huntingLevel, int levelOfDanger)
 	{
 		HuntingLevel = huntingLevel;
+		LevelOfDanger = levelOfDanger;
 	};
 	int GetHuntingLevelAsNumber() {
 		return HuntingLevel;
@@ -27,5 +28,6 @@ public:
 
 private:
 	int HuntingLevel;
+	int LevelOfDanger;
 };
 
