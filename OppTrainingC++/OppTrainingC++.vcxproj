@@ -143,7 +143,7 @@
     <ClCompile Include="AnimalFactory.cpp" />
     <ClCompile Include="Carnivores.cpp" />
     <ClCompile Include="CatFamilyService.cpp" />
-    <ClCompile Include="HuntingLevel.cpp" />
+    <ClCompile Include="Hunting.cpp" />
     <ClCompile Include="Lion.cpp" />
     <ClCompile Include="OppTrainingC++.cpp" />
     <ClCompile Include="Puma.cpp" />

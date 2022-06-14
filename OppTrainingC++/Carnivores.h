@@ -2,17 +2,16 @@
 using namespace std;
 #include <string>
 #include <iostream>
-#include "HuntingLevel.cpp"
 class Carnivores
 {
 public:
 	Carnivores(int huntingLevel, int dangerLevel)
 	{
-		HuntingLevel = huntingLevel;
+		Hunting = huntingLevel;
 		DangerLevel = dangerLevel;
 	};
 	void ShowHuntingLevel() {
-		switch (HuntingLevel)
+		switch (Hunting)
 		{
 		case 0: cout << "Low\n"; break;
 		case 1: cout << "Medium\n"; break;
@@ -24,6 +23,6 @@ public:
 	};
 
 private:
-	int HuntingLevel;
+	int Hunting;
 	int DangerLevel;
 };

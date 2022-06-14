@@ -2,8 +2,7 @@
 #include <exception>
 #include <string>
 #include <iostream>
-#include "HuntingLevel.cpp"
-#include "GlobalConstants.h"
+#include "Hunting.cpp"
 
 using namespace std;
 

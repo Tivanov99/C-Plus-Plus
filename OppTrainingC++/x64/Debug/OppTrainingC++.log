@@ -1,7 +1,6 @@
 ﻿  Carnivores.cpp
   CatFamilyService.cpp
-C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\HuntingLevel.cpp(1,19): error C2011: 'HuntingLevel': 'enum' type redefinition
-C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\HuntingLevel.cpp(1): message : see declaration of 'HuntingLevel'
-  Lion.cpp
+  Hunting.cpp
   Tiger.cpp
   Generating Code...
+  OppTrainingC++.vcxproj -> C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\x64\Debug\OppTrainingC++.exe
