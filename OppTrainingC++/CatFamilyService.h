@@ -39,8 +39,12 @@ public:
 			cin >> hunttingLevel;
 			cout << "\n";
 
-
 			cout << OptionalAnimalParameterMessage;
+			cout << "Animal Level of danger: ";
+			int levelOfDanger;
+			cin >> levelOfDanger;
+			cout << "\n";
+
 
 		}
 		catch (const std::exception&)
