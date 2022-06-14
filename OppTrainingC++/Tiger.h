@@ -12,7 +12,7 @@ public:
 		, Carnivores(huntingLevel, levelOfDanger) {
 	};
 	void GetAnimalType() {
-		cout << Name << " Is " <<typeid(this).name() << "\n";
+		cout << "The " << Name << " is " << "Tiger";
 	}
 	void MakeSpecialSound() {
 		cout << "Roar\n";
