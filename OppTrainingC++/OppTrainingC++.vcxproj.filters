@@ -39,10 +39,10 @@
     <ClCompile Include="Tiger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AnimalFactory.cpp">
+    <ClCompile Include="Lion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Lion.cpp">
+    <ClCompile Include="AnimalFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,14 +56,14 @@
     <ClInclude Include="Puma.h">
       <Filter>Header Files\CatFamily</Filter>
     </ClInclude>
-    <ClInclude Include="AnimalFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Tiger.h">
       <Filter>Header Files\CatFamily</Filter>
     </ClInclude>
     <ClInclude Include="Lion.h">
       <Filter>Header Files\CatFamily</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimalFactory.h">
+      <Filter>Header Files\AnimalFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
