@@ -49,7 +49,8 @@ private:
 	bool CreateAnimal(int animalCode) {
 		switch (animalCode)
 		{
-		case 1:  break;
+		case 1: cout << "You choose to create Lion! Creation of Lion want's following parameters:\n";
+			break;
 		default:
 			break;
 		}
