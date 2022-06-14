@@ -7,8 +7,8 @@ class Lion : public Animal,
 {
 public:
 	Lion(string name, int age, double weight, int huntingLevel = 1,
-		int levelOfDanger = 60, bool isVaccinated = false,
-		int happyLevel = 40, int foodLevel = 30)
+		int levelOfDanger = 70, bool isVaccinated = false,
+		int happyLevel = 60, int foodLevel = 0)
 		:Animal(name, age, weight, happyLevel, foodLevel, isVaccinated)
 		, Carnivores(huntingLevel, levelOfDanger) {
 	};

@@ -143,6 +143,7 @@
     <ClCompile Include="AnimalFactory.cpp" />
     <ClCompile Include="Carnivores.cpp" />
     <ClCompile Include="HuntingLevel.cpp" />
+    <ClCompile Include="Lion.cpp" />
     <ClCompile Include="OppTrainingC++.cpp" />
     <ClCompile Include="Puma.cpp" />
     <ClCompile Include="Tiger.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="Animal.h" />
     <ClInclude Include="AnimalFactory.h" />
     <ClInclude Include="Carnivores.h" />
+    <ClInclude Include="Lion.h" />
     <ClInclude Include="Puma.h" />
     <ClInclude Include="Tiger.h" />
   </ItemGroup>

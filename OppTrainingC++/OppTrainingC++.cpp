@@ -5,6 +5,7 @@ int main()
 {
 	Puma puma {"Vanko",3,45.5,2,80,true,10,20};
 	puma.GetAnimalType();
+
 }
 
 
