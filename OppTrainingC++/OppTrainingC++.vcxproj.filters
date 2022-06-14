@@ -36,9 +36,6 @@
     <ClCompile Include="Carnivores.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HuntingLevel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Tiger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,7 +48,7 @@
     <ClCompile Include="CatFamilyService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GlobalConstants.cpp">
+    <ClCompile Include="HuntingLevel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -76,9 +73,6 @@
     </ClInclude>
     <ClInclude Include="CatFamilyService.h">
       <Filter>Header Files\CatFamily\CatFamilyService</Filter>
-    </ClInclude>
-    <ClInclude Include="GlobalConstants.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

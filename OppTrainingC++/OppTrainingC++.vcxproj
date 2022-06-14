@@ -143,7 +143,6 @@
     <ClCompile Include="AnimalFactory.cpp" />
     <ClCompile Include="Carnivores.cpp" />
     <ClCompile Include="CatFamilyService.cpp" />
-    <ClCompile Include="GlobalConstants.cpp" />
     <ClCompile Include="HuntingLevel.cpp" />
     <ClCompile Include="Lion.cpp" />
     <ClCompile Include="OppTrainingC++.cpp" />
@@ -155,7 +154,6 @@
     <ClInclude Include="AnimalFactory.h" />
     <ClInclude Include="Carnivores.h" />
     <ClInclude Include="CatFamilyService.h" />
-    <ClInclude Include="GlobalConstants.h" />
     <ClInclude Include="Lion.h" />
     <ClInclude Include="Puma.h" />
     <ClInclude Include="Tiger.h" />

@@ -10,7 +10,6 @@ using namespace std;
 class CatFamilyService
 {
 private:
-	HuntingLevel HuntingLevel;
 	string OptionalAnimalParameterMessage =
 		"This parameter is optional, if you don't want to fill just write '-1'\n";
 public:
@@ -41,10 +40,26 @@ public:
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal Level of danger: ";
-			int levelOfDanger;
-			cin >> levelOfDanger;
+			int LevelOfDanger;
+			cin >> LevelOfDanger;
 			cout << "\n";
 
+			cout << "Animal Vaccinated (true/false) : ";
+			bool Vaccinated;
+			cin >> Vaccinated;
+			cout << "\n";
+
+			cout << OptionalAnimalParameterMessage;
+			cout << "Animal Happy Level: ";
+			int HappyLevel;
+			cin >> HappyLevel;
+			cout << "\n";
+
+			cout << OptionalAnimalParameterMessage;
+			cout << "Animal Food Level: ";
+			int FoodLevel;
+			cin >> FoodLevel;
+			cout << "\n";
 
 		}
 		catch (const std::exception&)
