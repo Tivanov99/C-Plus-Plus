@@ -2,16 +2,15 @@
 #include <exception>
 #include <string>
 #include <iostream>
+#include "HuntingLevel.cpp"
+
 using namespace std;
 
 class CatFamilyService
 {
-
+private:
+	HuntingLevel hunting;
 public:
-	CatFamilyService()
-	{
-
-	};
 	bool CreateLion() {
 		try
 		{
@@ -31,7 +30,7 @@ public:
 			cout << "\n";
 
 			cout << "This parameter is optional, if you don't want to fill just write '-1'\n";
-			cout << "Animal HuntingLevel: " << ;
+			cout << "Animal HuntingLevel: " << Low << "Low" << Medium << "Medium" << High << "High" << Professional << "Professional";
 		}
 		catch (const std::exception&)
 		{
