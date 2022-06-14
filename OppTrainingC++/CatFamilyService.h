@@ -3,13 +3,14 @@
 #include <string>
 #include <iostream>
 #include "HuntingLevel.cpp"
+#include "GlobalConstants.h"
 
 using namespace std;
 
 class CatFamilyService
 {
 private:
-	HuntingLevel hunting;
+	HuntingLevel HuntingLevel;
 public:
 	bool CreateLion() {
 		try
@@ -30,7 +31,15 @@ public:
 			cout << "\n";
 
 			cout << "This parameter is optional, if you don't want to fill just write '-1'\n";
-			cout << "Animal HuntingLevel: " << Low << "Low" << Medium << "Medium" << High << "High" << Professional << "Professional";
+			cout << "Animal HuntingLevel: " << Low << "Low" << Medium << "Medium"
+				 << High << "High" << Professional << "Professional" << ": ";
+			int hunttingLevel;
+			cin >> hunttingLevel;
+			cout << "\n";
+
+
+			cout << GlobalConstants::Value;
+
 		}
 		catch (const std::exception&)
 		{
