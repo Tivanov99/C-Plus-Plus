@@ -31,6 +31,14 @@ private:
 		}
 	};
 	void ShowAllAvailableAnimals() {
+		cout << "1.- From 'Car Family' -\n";
+		cout << "(1.1) - Lion\n";
+		cout << "(1.2) - Puma\n";
+		cout << "(1.3) - Tiger\n";
+		cout << "Write the code which is inside the brackets! - Example 1.1 - :";
+		double code;
+		cin >> code;
+
 	};
 	void DeleteAnimal() {
 
