@@ -19,6 +19,9 @@
     <Filter Include="Header Files\CatFamily">
       <UniqueIdentifier>{1803b7f1-feb5-40e8-8d80-9349d9faa4d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\CatFamily\CatFamilyService">
+      <UniqueIdentifier>{bdcc4bbe-e442-47b5-ad85-2f920fd46f0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OppTrainingC++.cpp">
@@ -45,6 +48,12 @@
     <ClCompile Include="AnimalFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CatFamilyService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalConstants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h">
@@ -64,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="AnimalFactory.h">
       <Filter>Header Files\AnimalFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CatFamilyService.h">
+      <Filter>Header Files\CatFamily\CatFamilyService</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalConstants.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

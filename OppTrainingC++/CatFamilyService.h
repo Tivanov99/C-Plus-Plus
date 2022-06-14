@@ -11,6 +11,8 @@ class CatFamilyService
 {
 private:
 	HuntingLevel HuntingLevel;
+	string OptionalAnimalParameterMessage =
+		"This parameter is optional, if you don't want to fill just write '-1'\n";
 public:
 	bool CreateLion() {
 		try
@@ -30,7 +32,7 @@ public:
 			cin >> weight;
 			cout << "\n";
 
-			cout << "This parameter is optional, if you don't want to fill just write '-1'\n";
+			cout << OptionalAnimalParameterMessage;
 			cout << "Animal HuntingLevel: " << Low << "Low" << Medium << "Medium"
 				 << High << "High" << Professional << "Professional" << ": ";
 			int hunttingLevel;
@@ -38,7 +40,7 @@ public:
 			cout << "\n";
 
 
-			cout << GlobalConstants::Value;
+			cout << OptionalAnimalParameterMessage;
 
 		}
 		catch (const std::exception&)

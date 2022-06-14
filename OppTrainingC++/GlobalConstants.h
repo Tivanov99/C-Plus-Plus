@@ -6,10 +6,9 @@ using namespace std;
 class GlobalConstants
 {
 public:
-	static const string OptionalAnimalParameterMessage;
+	static const string OptionalAnimalParameterMessage ;
 	GlobalConstants()
 	{
-		OptionalAnimalParameterMessage="This parameter is optional, if you don't want to fill just write '-1'\n";
 	}
 };
 
