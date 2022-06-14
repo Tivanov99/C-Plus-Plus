@@ -1,9 +1,12 @@
 #include "Puma.h"
+#include "AnimalFactory.h"
+
 using namespace std;
 
 int main()
 {
-
+	AnimalFactory af;
+	af.AdminMenu();
 }
 
 

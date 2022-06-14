@@ -19,6 +19,7 @@ public:
 		cout << "2.Remove animal.\n";
 		int id;
 		cin >> id;
+		CallFunction(id);
 	};
 private:
 	void CallFunction(int i) {
@@ -32,19 +33,21 @@ private:
 	};
 	void ShowAllAvailableAnimals() {
 		cout << "1.- From 'Car Family' -\n";
-		cout << "(1.1) - Lion\n";
-		cout << "(1.2) - Puma\n";
-		cout << "(1.3) - Tiger\n";
+		cout << "(1) - Lion\n";
+		cout << "(2) - Puma\n";
+		cout << "(3) - Tiger\n";
 		cout << "Write the code which is inside the brackets! - Example 1.1 - :";
-		double code;
-		cin >> code;
-
+		int animalCode;
+		cin >> animalCode;
+		cout << "\n";
+		CreateAnimal(animalCode);
 	};
+
 	void DeleteAnimal() {
 
 	}
-	bool CreateAnimal(int animalType) {
-		switch (animalType)
+	bool CreateAnimal(int animalCode) {
+		switch (animalCode)
 		{
 		case 1:  break;
 		default:
