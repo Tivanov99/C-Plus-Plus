@@ -32,11 +32,11 @@ private:
 		}
 	};
 	void ShowAllAvailableAnimals() {
-		cout << "1.- From 'Car Family' -\n";
+		cout << "1.- From 'Cat Family' -\n";
 		cout << "(1) - Lion\n";
 		cout << "(2) - Puma\n";
 		cout << "(3) - Tiger\n";
-		cout << "Write the code which is inside the brackets! - Example 1.1 - :";
+		cout << "Write the code which is inside the brackets! - Example 2 - :";
 		int animalCode;
 		cin >> animalCode;
 		cout << "\n";
@@ -53,5 +53,7 @@ private:
 		default:
 			break;
 		}
+
+		return false;
 	}
 };
