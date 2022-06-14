@@ -1,9 +1,11 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "CatFamilyService.h"
 using namespace std;
 class AnimalFactory
 {
+	CatFamilyService catService;
 public:
 	AnimalFactory()
 	{
@@ -50,6 +52,7 @@ private:
 		switch (animalCode)
 		{
 		case 1: cout << "You choose to create Lion! Creation of Lion want's following parameters:\n";
+			catService.CreateLion();
 			break;
 		default:
 			break;
