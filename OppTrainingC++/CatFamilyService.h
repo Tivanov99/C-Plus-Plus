@@ -21,6 +21,7 @@ public:
 			cout << "Animal Name (Should be between 3 and 20 characters) : ";
 			string name;
 			cin >> name;
+			validator.ValidateString("Animal Name", name, 3, 20);
 
 
 			cout << "Animal Age (Should be between 1 and 25) : ";
