@@ -25,22 +25,23 @@ public:
 
 
 			cout << "Animal Age (Should be between 1 and 25) : ";
-			int age;
+			string age;
 			cin >> age;
+			validator.ValidateInt("Animal Age", age, 1, 25);
 
 			cout << "Animal Weight (Should be between 5 and 350) : ";
-			double weight;
+			string weight;
 			cin >> weight;
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal HuntingLevel: " << Low << ".Low " << Medium << ".Medium "
 				 << High << ".High " << Professional << ".Professional " << " : ";
-			int hunttingLevel;
+			string hunttingLevel;
 			cin >> hunttingLevel;
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal Level of danger (Should be between 1 and 5) : ";
-			int LevelOfDanger;
+			string LevelOfDanger;
 			cin >> LevelOfDanger;
 
 			cout << "Animal Vaccinated (true/false) : ";
@@ -49,12 +50,12 @@ public:
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal Happy Level (Should be between 1 and 5) : ";
-			int HappyLevel;
+			string HappyLevel;
 			cin >> HappyLevel;
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal Food Level (Should be between 1 and 10) : ";
-			int FoodLevel;
+			string FoodLevel;
 			cin >> FoodLevel;
 		}
 		catch (invalid_argument& ex)

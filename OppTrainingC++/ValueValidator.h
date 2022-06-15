@@ -16,5 +16,15 @@ public:
 			throw invalid_argument("(Invalid " + valueName + "!)\n");
 		}
 	};
+	void ValidateInt(string valueName, string value, int minValue, int maxValue) {
+		try
+		{
+			int parsedValue = stoi(value);
+		}
+		catch (const std::exception&)
+		{
+			throw invalid_argument("(Invalid " + valueName +  "!)\n");
+		}
+	};
 };
 
