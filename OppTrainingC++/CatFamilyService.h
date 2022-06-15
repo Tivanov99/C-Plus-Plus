@@ -51,13 +51,15 @@ public:
 			cout << "Animal Food Level : (Should be between 1 and 10)";
 			int FoodLevel;
 			cin >> FoodLevel;
-
 		}
 		catch (const std::exception&)
 		{
-			cout << "- Somethig wrong! -";
-
-			return false;
+			cout << "- Somethig wrong! -\n";
+			cout << "If you wanna try again press (1).\n";
+			cout << "For exit to main menu press (2).";
+			cout << "Your choice: ";
+			int choise;
+			cin >> choise;
 		}
 		return true;
 	};
