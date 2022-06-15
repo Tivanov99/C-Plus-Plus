@@ -10,7 +10,7 @@ class CatFamilyService
 {
 private:
 	string OptionalAnimalParameterMessage =
-		"This parameter is optional, if you don't want to fill just write '-1'\n";
+		"\n - This parameter is optional, if you don't want to fill just write '-1' - \n";
 public:
 	bool CreateLion() {
 		try
@@ -23,7 +23,7 @@ public:
 			int age;
 			cin >> age;
 
-			cout << "Animal Weight : (Should be between 5 and 350)";
+			cout << "Animal Weight (Should be between 5 and 350) : ";
 			double weight;
 			cin >> weight;
 
@@ -34,21 +34,21 @@ public:
 			cin >> hunttingLevel;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Level of danger : (Should be between 1 and 5)";
+			cout << "Animal Level of danger (Should be between 1 and 5) : ";
 			int LevelOfDanger;
 			cin >> LevelOfDanger;
 
 			cout << "Animal Vaccinated (true/false) : ";
-			bool Vaccinated;
+			string Vaccinated;
 			cin >> Vaccinated;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Happy Level : (Should be between 1 and 5)";
+			cout << "Animal Happy Level (Should be between 1 and 5) : ";
 			int HappyLevel;
 			cin >> HappyLevel;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Food Level : (Should be between 1 and 10)";
+			cout << "Animal Food Level (Should be between 1 and 10) : ";
 			int FoodLevel;
 			cin >> FoodLevel;
 		}
