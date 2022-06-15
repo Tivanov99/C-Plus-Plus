@@ -19,22 +19,22 @@ public:
 			string name;
 			cin >> name;
 
-			cout << "Animal Age: ";
+			cout << "Animal Age : ";
 			int age;
 			cin >> age;
 
-			cout << "Animal Weight: ";
+			cout << "Animal Weight : ";
 			double weight;
 			cin >> weight;
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal HuntingLevel: " << Low << ".Low " << Medium << ".Medium "
-				 << High << ".High " << Professional << ".Professional " << ": ";
+				 << High << ".High " << Professional << ".Professional " << " : ";
 			int hunttingLevel;
 			cin >> hunttingLevel;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Level of danger: ";
+			cout << "Animal Level of danger : ";
 			int LevelOfDanger;
 			cin >> LevelOfDanger;
 
@@ -43,18 +43,20 @@ public:
 			cin >> Vaccinated;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Happy Level: ";
+			cout << "Animal Happy Level : ";
 			int HappyLevel;
 			cin >> HappyLevel;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Food Level: ";
+			cout << "Animal Food Level : ";
 			int FoodLevel;
 			cin >> FoodLevel;
 
 		}
 		catch (const std::exception&)
 		{
+			cout << "-Somethig wrong!-";
+
 			return false;
 		}
 		return true;
