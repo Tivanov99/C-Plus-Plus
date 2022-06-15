@@ -29,9 +29,10 @@ public:
 			cin >> age;
 			validator.ValidateInt("Animal Age", age, 1, 25);
 
-			cout << "Animal Weight (Should be between 5 and 350) : ";
+			cout << "Animal Weight (Should be between 5.0 and 350.0) : ";
 			string weight;
 			cin >> weight;
+			validator.ValidateDouble("Animal Weight", weight, 5.0, 350.0);
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal HuntingLevel: " << Low << ".Low " << Medium << ".Medium "

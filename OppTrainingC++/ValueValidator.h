@@ -31,5 +31,20 @@ public:
 			throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
 		}
 	};
+	void ValidateDouble(string valueName, string value, double minValue, double maxValue) {
+		double parsedValue;
+		try
+		{
+			parsedValue = stoi(value);
+		}
+		catch (const std::exception&)
+		{
+			throw invalid_argument("(Invalid '" + valueName + "'  should be number!)\n");
+		}
+
+		if (parsedValue <minValue || parsedValue > maxValue) {
+			throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
+		}
+	};
 };
 
