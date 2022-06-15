@@ -17,23 +17,18 @@ public:
 		}
 	};
 	void ValidateInt(string valueName, string value, int minValue, int maxValue) {
+		int parsedValue;
 		try
 		{
-			int parsedValue = stoi(value);
-			try
-			{
-				if (parsedValue <minValue || parsedValue > maxValue) {
-					throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
-				}
-			}
-			catch (const std::exception&)
-			{
-
-			}
+			 parsedValue = stoi(value);
 		}
 		catch (const std::exception&)
 		{
 			throw invalid_argument("(Invalid '" + valueName + "'  should be number!)\n");
+		}
+
+		if (parsedValue <minValue || parsedValue > maxValue) {
+			throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
 		}
 	};
 };
