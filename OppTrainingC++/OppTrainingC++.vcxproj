@@ -148,6 +148,7 @@
     <ClCompile Include="OppTrainingC++.cpp" />
     <ClCompile Include="Puma.cpp" />
     <ClCompile Include="Tiger.cpp" />
+    <ClCompile Include="ValueValidator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h" />
@@ -157,6 +158,7 @@
     <ClInclude Include="Lion.h" />
     <ClInclude Include="Puma.h" />
     <ClInclude Include="Tiger.h" />
+    <ClInclude Include="ValueValidator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

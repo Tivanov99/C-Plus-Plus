@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include "Hunting.cpp"
+#include "ValueValidator.h"
 
 using namespace std;
 
@@ -11,6 +12,8 @@ class CatFamilyService
 private:
 	string OptionalAnimalParameterMessage =
 		"\n - This parameter is optional, if you don't want to fill just write '-1' - \n";
+	ValueValidator validator;
+
 public:
 	bool CreateLion() {
 		try

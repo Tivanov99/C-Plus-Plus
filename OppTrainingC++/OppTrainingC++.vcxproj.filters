@@ -22,6 +22,9 @@
     <Filter Include="Header Files\CatFamily\CatFamilyService">
       <UniqueIdentifier>{bdcc4bbe-e442-47b5-ad85-2f920fd46f0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Validator">
+      <UniqueIdentifier>{78aa1c4b-8a05-40a1-b4cd-fd8c330a3354}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OppTrainingC++.cpp">
@@ -51,6 +54,9 @@
     <ClCompile Include="Hunting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ValueValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h">
@@ -73,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="CatFamilyService.h">
       <Filter>Header Files\CatFamily\CatFamilyService</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueValidator.h">
+      <Filter>Header Files\Validator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

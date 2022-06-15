@@ -1,2 +1,4 @@
-﻿  OppTrainingC++.cpp
+﻿  ValueValidator.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
   OppTrainingC++.vcxproj -> C:\Users\Trifon\Desktop\C-plus-plus\OppTrainingC++\x64\Debug\OppTrainingC++.exe
