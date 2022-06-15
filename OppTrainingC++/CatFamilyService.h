@@ -19,6 +19,7 @@ public:
 			string name;
 			cin >> name;
 
+
 			cout << "Animal Age (Should be between 1 and 25) : ";
 			int age;
 			cin >> age;
@@ -52,7 +53,7 @@ public:
 			int FoodLevel;
 			cin >> FoodLevel;
 		}
-		catch (const std::exception&)
+		catch (...)
 		{
 			cout << "- Somethig wrong! -\n";
 			cout << "If you wanna try again press (1).\n";
