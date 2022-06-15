@@ -13,8 +13,7 @@ public:
 	void ValidateString(string valueName ,string value, int minLenght, int maxLenght) {
 		if (value == "" || value == " " || value.length() < minLenght || value.length() > maxLenght
 			|| empty(value)) {
-			cout << "Invalid " << valueName <<".\n";
-			throw invalid_argument("Invalid " + valueName);
+			throw invalid_argument("(Invalid " + valueName + "!)\n");
 		}
 	};
 };

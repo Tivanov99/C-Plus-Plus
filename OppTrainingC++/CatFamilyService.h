@@ -59,7 +59,7 @@ public:
 		}
 		catch (invalid_argument& ex)
 		{
-			cout << "- Somethig wrong! -\n";
+			cout << "\n - Somethig wrong! - ";
 			cout << ex.what();
 			cout << "If you wanna try again press (1).\n";
 			cout << "For exit to main menu press (2).";
