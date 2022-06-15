@@ -14,7 +14,7 @@ public:
 		if (value == "" || value == " " || value.length() < minLenght || value.length() > maxLenght
 			|| empty(value)) {
 			cout << "Invalid " << valueName <<".\n";
-			throw("Invalid ",valueName);
+			throw invalid_argument("Invalid " + valueName);
 		}
 	};
 };

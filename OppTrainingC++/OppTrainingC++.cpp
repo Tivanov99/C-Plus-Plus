@@ -1,6 +1,4 @@
-#include "Puma.h"
 #include "AnimalFactory.h"
-
 using namespace std;
 
 

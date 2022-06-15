@@ -57,9 +57,10 @@ public:
 			int FoodLevel;
 			cin >> FoodLevel;
 		}
-		catch (...)
+		catch (invalid_argument& ex)
 		{
 			cout << "- Somethig wrong! -\n";
+			cout << ex.what();
 			cout << "If you wanna try again press (1).\n";
 			cout << "For exit to main menu press (2).";
 			cout << "Your choice: ";
