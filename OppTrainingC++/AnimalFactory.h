@@ -6,24 +6,14 @@ using namespace std;
 class AnimalFactory
 {
 	CatFamilyService catService;
+	friend class Menu ;
+
 public:
 	AnimalFactory()
 	{
 
 	}
-	void UserMenu() {
-		cout << "Wellcome to user menu!\n";
-		cout << "Register.\n";
-	};
-	void AdminMenu() {
-		cout << "Wellcome to Animal Factory!\n";
-		cout << "1.Create animal.\n";
-		cout << "2.Remove animal.\n";
-		cout << "Your choice: ";
-		int id;
-		cin >> id;
-		CallFunction(id);
-	};
+	
 private:
 	void CallFunction(int i) {
 		switch (i)

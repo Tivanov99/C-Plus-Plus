@@ -15,7 +15,7 @@ private:
 	ValueValidator validator;
 
 public:
-	bool CreateLion() {
+	int CreateLion() {
 		try
 		{
 			cout << "Animal Name (Should be between 3 and 20 characters) : ";
@@ -76,8 +76,9 @@ public:
 			cout << "Your choice: ";
 			int choise;
 			cin >> choise;
+			return choise;
 		}
-		return true;
+		return 0;
 	};
 };
 
