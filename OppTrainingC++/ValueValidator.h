@@ -10,7 +10,7 @@ using namespace std;
 class ValueValidator
 {
 public:
-	void ValidateString(string valueName ,string value, int minLenght, int maxLenght) {
+	void ValidateString(string valueName, string value, int minLenght, int maxLenght) {
 		if (value == "" || value == " " || value.length() < minLenght || value.length() > maxLenght
 			|| empty(value)) {
 			throw invalid_argument("(Invalid " + valueName + "!)\n");
@@ -20,10 +20,20 @@ public:
 		try
 		{
 			int parsedValue = stoi(value);
+			try
+			{
+				if (parsedValue <minValue || parsedValue > maxValue) {
+					throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
+				}
+			}
+			catch (const std::exception&)
+			{
+
+			}
 		}
 		catch (const std::exception&)
 		{
-			throw invalid_argument("(Invalid " + valueName +  "!)\n");
+			throw invalid_argument("(Invalid '" + valueName + "'  should be number!)\n");
 		}
 	};
 };
