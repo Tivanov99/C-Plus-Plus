@@ -145,6 +145,7 @@
     <ClCompile Include="CatFamilyService.cpp" />
     <ClCompile Include="Hunting.cpp" />
     <ClCompile Include="Lion.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="OppTrainingC++.cpp" />
     <ClCompile Include="Puma.cpp" />
     <ClCompile Include="Tiger.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="Carnivores.h" />
     <ClInclude Include="CatFamilyService.h" />
     <ClInclude Include="Lion.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Puma.h" />
     <ClInclude Include="Tiger.h" />
     <ClInclude Include="ValueValidator.h" />
