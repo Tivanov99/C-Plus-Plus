@@ -15,15 +15,15 @@ public:
 	bool CreateLion() {
 		try
 		{
-			cout << "Animal Name : ";
+			cout << "Animal Name (Should be between 3 and 20 characters) : ";
 			string name;
 			cin >> name;
 
-			cout << "Animal Age : ";
+			cout << "Animal Age (Should be between 1 and 25) : ";
 			int age;
 			cin >> age;
 
-			cout << "Animal Weight : ";
+			cout << "Animal Weight : (Should be between 5 and 350)";
 			double weight;
 			cin >> weight;
 
@@ -34,7 +34,7 @@ public:
 			cin >> hunttingLevel;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Level of danger : ";
+			cout << "Animal Level of danger : (Should be between 1 and 5)";
 			int LevelOfDanger;
 			cin >> LevelOfDanger;
 
@@ -43,19 +43,19 @@ public:
 			cin >> Vaccinated;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Happy Level : ";
+			cout << "Animal Happy Level : (Should be between 1 and 5)";
 			int HappyLevel;
 			cin >> HappyLevel;
 
 			cout << OptionalAnimalParameterMessage;
-			cout << "Animal Food Level : ";
+			cout << "Animal Food Level : (Should be between 1 and 10)";
 			int FoodLevel;
 			cin >> FoodLevel;
 
 		}
 		catch (const std::exception&)
 		{
-			cout << "-Somethig wrong!-";
+			cout << "- Somethig wrong! -";
 
 			return false;
 		}
