@@ -19,6 +19,7 @@ public:
 		cout << "Wellcome to Animal Factory!\n";
 		cout << "1.Create animal.\n";
 		cout << "2.Remove animal.\n";
+		cout << "Your choice: ";
 		int id;
 		cin >> id;
 		CallFunction(id);
@@ -38,7 +39,7 @@ private:
 		cout << "(1) - Lion\n";
 		cout << "(2) - Puma\n";
 		cout << "(3) - Tiger\n";
-		cout << "Write the code which is inside the brackets! - Example 2 - :";
+		cout << "Write the code which is inside the brackets! - Example 2 - : ";
 		int animalCode;
 		cin >> animalCode;
 		cout << "\n";
