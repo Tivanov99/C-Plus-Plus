@@ -39,25 +39,33 @@ public:
 				 << High << ".High " << Professional << ".Professional " << " : ";
 			string hunttingLevel;
 			cin >> hunttingLevel;
+			validator.ValidateInt("Animal HuntingLevel", hunttingLevel, 0, 3);
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal Level of danger (Should be between 1 and 5) : ";
 			string LevelOfDanger;
 			cin >> LevelOfDanger;
+			validator.ValidateInt("Animal Level of danger", LevelOfDanger, 1, 5);
 
-			cout << "Animal Vaccinated (true/false) : ";
+
+			cout << "Animal Vaccinated (1.true/2.false) : ";
 			string Vaccinated;
 			cin >> Vaccinated;
+			validator.ValidateInt("Animal Vaccinated", Vaccinated, 1, 2);
+
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal Happy Level (Should be between 1 and 5) : ";
 			string HappyLevel;
 			cin >> HappyLevel;
+			validator.ValidateInt("Animal Happy Level", HappyLevel, 1, 5);
 
 			cout << OptionalAnimalParameterMessage;
 			cout << "Animal Food Level (Should be between 1 and 10) : ";
 			string FoodLevel;
 			cin >> FoodLevel;
+			validator.ValidateInt("Animal Food Level", FoodLevel, 1,10);
+
 		}
 		catch (invalid_argument& ex)
 		{
