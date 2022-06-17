@@ -7,13 +7,16 @@ class Menu
 {
 private:
 	AnimalFactory factory;
+
 public:
-	void UserMenu() {
-		cout << "Wellcome to user menu!\n";
-		cout << "Register.\n";
+	void MainMenu() {
+		cout << "Wellcome to Main menu!\n";
+		cout << "1.Go to user menu.\n";
+		cout << "2.Go to admin menu.\n";
+
 	};
 	void AdminMenu() {
-		cout << "Wellcome to Animal Factory!\n";
+		cout << "Wellcome to admin menu!\n";
 		cout << "1.Create animal.\n";
 		cout << "2.Remove animal.\n";
 		cout << "Your choice: ";
