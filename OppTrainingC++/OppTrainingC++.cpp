@@ -7,6 +7,8 @@ int main()
 {
 	Menu menu;
 	menu.MainMenu();
+	/*CatFamilyService service;
+	service.CreateLion();*/
 
 }
 

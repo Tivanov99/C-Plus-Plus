@@ -21,14 +21,22 @@ public:
 				string userInput;
 				cin >> userInput;
 				int value = stoi(userInput);
+				if (value < 1 || value>2) {
+					throw std::invalid_argument("The number must be one of the ones shown above.");
+				}
 			}
-			catch (const std::exception&)
+			catch (const std::exception& ex)
 			{
 				cout << "\nInvalid choice! Try again!\n";
+				string value = typeid(ex).name();
+				if (value._Equal("class std::invalid_argument")) {
+					cout << ex.what();
+				}
 				continue;
 			}
+
 		}
-		
+
 	};
 	void AdminMenu() {
 		cout << "Wellcome to admin menu!\n";
