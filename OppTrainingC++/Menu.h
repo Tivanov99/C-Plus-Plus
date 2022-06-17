@@ -8,6 +8,7 @@ class Menu
 private:
 	AnimalFactory factory;
 	void UserMenu() {
+		cout << "\nUser menu.";
 
 	};
 	void AdminMenu() {
@@ -35,7 +36,11 @@ public:
 				if (value < 1 || value > 2) {
 					throw std::out_of_range("The number must be one of the ones shown above.\n");
 				}
-
+				switch (value)
+				{
+				case 1:UserMenu();break;
+				case 2:AdminMenu();break;
+				}
 			}
 			catch (const std::exception& ex)
 			{
