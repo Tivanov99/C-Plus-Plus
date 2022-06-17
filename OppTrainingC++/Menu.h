@@ -22,17 +22,18 @@ public:
 				cin >> userInput;
 				int value = stoi(userInput);
 				if (value < 1 || value>2) {
-					throw std::invalid_argument("The number must be one of the ones shown above.");
+					throw std::out_of_range("The number must be one of the ones shown above.\n");
 				}
 			}
 			catch (const std::exception& ex)
 			{
-				cout << "\nInvalid choice! Try again!\n";
 				string value = typeid(ex).name();
-				if (value._Equal("class std::invalid_argument")) {
+				if (value._Equal("class std::out_of_range")) {
 					cout << ex.what();
 				}
-				continue;
+				else {
+					cout << "\nInvalid choice (Value must be number)! Try again!\n";
+				}
 			}
 
 		}
