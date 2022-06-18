@@ -48,11 +48,11 @@ public:
 	int ValidateMenuSelection(string value) {
 		try
 		{	
-			int userChoise = stoi(value);
-			if (userChoise < 1 || userChoise > 2) {
+			int userChoice = stoi(value);
+			if (userChoice < 1 || userChoice > 2) {
 				throw std::out_of_range("The number must be one of the ones shown above.\n");
 			}
-			return userChoise;
+			return userChoice;
 		}
 		catch (const std::exception& ex)
 		{

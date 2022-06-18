@@ -14,7 +14,7 @@ private:
 		cout << "0.Back to main menu.\n";
 	};
 	void AdminMenu() {
-		cout << "Admin menu.\n";
+		cout << "\nAdmin menu.\n";
 		cout << "0.Back to main menu.\n";
 		cout << "1.Create animal.\n";
 		cout << "2.Remove animal.\n";
@@ -25,22 +25,28 @@ private:
 	};
 public:
 	void MainMenu() {
-			cout << "Wellcome to Main menu!\n";
+		cout << "Wellcome to Main menu!\n";
+		cout << "1.Go to user menu.\n";
+		cout << "2.Go to admin menu.\n\n";
+		cout << "Enter you choice: ";
+		string userInput;
+		int choice;
 		while (true)
 		{
-			cout << "1.Go to user menu.\n";
+			cin >> userInput;
+			choice = validator.ValidateMenuSelection(userInput);
+
+			if (choice != -1) {
+				switch (choice)
+				{
+				case 1:UserMenu();break;
+				case 2:AdminMenu();break;
+				}
+			}
+			cout << "\n1.Go to user menu.\n";
 			cout << "2.Go to admin menu.\n\n";
 			cout << "Enter you choice: ";
-			string userInput;
-			cin >> userInput;
-			int choise = validator.ValidateMenuSelection(userInput);
-			switch (choise)
-			{
-			case 1:UserMenu();break;
-			case 2:AdminMenu();break;
-			}
 		}
 	};
-
 };
 
