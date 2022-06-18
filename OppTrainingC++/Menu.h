@@ -19,18 +19,20 @@ private:
 		cout << "1.Create animal.\n";
 		cout << "2.Remove animal.\n";
 		cout << "Your choice: ";
-		int id;
 		try
 		{
+			string id;
 			cin >> id;
-			if (id > 0) {
-				factory.CallFunction(id);
+			int value = stoi(id);
+			if (value > 0) {
+				factory.CallFunction(value);
 			}
 		}
 		catch (const std::exception&)
 		{
 
 		}
+		
 
 	};
 public:

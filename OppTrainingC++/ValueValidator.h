@@ -27,11 +27,10 @@ public:
 		}
 
 		if (parsedValue <minValue || parsedValue > maxValue) {
-			string error;
-			error.append("(Invalid ");
-			error.append(valueName);
+			string error = "(Invalid " + valueName + "! Must be number between) "
+				+ to_string(minValue) + " and " +to_string(maxValue)+ "!";
 
-			throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
+			throw invalid_argument(error);
 		}
 	};
 	void ValidateDouble(string valueName, string value, double minValue, double maxValue) {
