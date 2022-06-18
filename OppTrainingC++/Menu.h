@@ -21,7 +21,9 @@ private:
 		cout << "Your choice: ";
 		int id;
 		cin >> id;
+		if (id > 0) {
 		factory.CallFunction(id);
+		}
 	};
 public:
 	void MainMenu() {
