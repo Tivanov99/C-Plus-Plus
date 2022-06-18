@@ -15,7 +15,7 @@ public:
 			throw invalid_argument("(Invalid " + valueName + "!)\n");
 		}
 	};
-	void ValidateInt(string valueName, string value, int minValue, int maxValue) {
+	int ValidateInt(string valueName, string value, int minValue, int maxValue) {
 		int parsedValue;
 		try
 		{
@@ -26,12 +26,12 @@ public:
 			throw invalid_argument("(Invalid '" + valueName + "'  should be number!)\n");
 		}
 
-		if (parsedValue <minValue || parsedValue > maxValue) {
-			string error = "(Invalid " + valueName + "! Must be number between) "
-				+ to_string(minValue) + " and " +to_string(maxValue)+ "!";
+		if (parsedValue < minValue || parsedValue > maxValue) {
+			string error = "(Invalid " + valueName + "! Must be value between) " + to_string(minValue) + " and " +to_string(maxValue)+ "!";
 
 			throw invalid_argument(error);
 		}
+		return parsedValue;
 	};
 	void ValidateDouble(string valueName, string value, double minValue, double maxValue) {
 		double parsedValue;

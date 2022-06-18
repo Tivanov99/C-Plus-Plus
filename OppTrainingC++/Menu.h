@@ -23,17 +23,16 @@ private:
 		{
 			string id;
 			cin >> id;
-			int value = stoi(id);
+			int value = validator.ValidateInt("Menu number", id, 0, 2);
 			if (value > 0) {
 				factory.CallFunction(value);
 			}
 		}
-		catch (const std::exception&)
+		catch (const std::exception ex)
 		{
-
+			cout << "\n - Somethig wrong! - ";
+			cout << ex.what();
 		}
-		
-
 	};
 public:
 	void MainMenu() {
