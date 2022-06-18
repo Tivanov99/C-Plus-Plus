@@ -27,6 +27,10 @@ public:
 		}
 
 		if (parsedValue <minValue || parsedValue > maxValue) {
+			string error;
+			error.append("(Invalid ");
+			error.append(valueName);
+
 			throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
 		}
 	};

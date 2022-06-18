@@ -20,10 +20,18 @@ private:
 		cout << "2.Remove animal.\n";
 		cout << "Your choice: ";
 		int id;
-		cin >> id;
-		if (id > 0) {
-		factory.CallFunction(id);
+		try
+		{
+			cin >> id;
+			if (id > 0) {
+				factory.CallFunction(id);
+			}
 		}
+		catch (const std::exception&)
+		{
+
+		}
+
 	};
 public:
 	void MainMenu() {
