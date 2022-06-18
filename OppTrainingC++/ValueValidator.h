@@ -27,8 +27,8 @@ public:
 		}
 
 		if (parsedValue < minValue || parsedValue > maxValue) {
-			string error = "(Invalid " + valueName + "! Must be value between) " + to_string(minValue) + " and " +to_string(maxValue)+ "!";
-
+			string error = "(Invalid " + valueName + "! Must be value between) "
+				+ to_string(minValue) + " and " +to_string(maxValue)+ " including !";
 			throw invalid_argument(error);
 		}
 		return parsedValue;

@@ -21,9 +21,9 @@ private:
 		cout << "Your choice: ";
 		try
 		{
-			string id;
-			cin >> id;
-			int value = validator.ValidateInt("Menu number", id, 0, 2);
+			string userInput;
+			cin >> userInput;
+			int value = validator.ValidateInt("Menu number", userInput, 0, 2);
 			if (value > 0) {
 				factory.CallFunction(value);
 			}
