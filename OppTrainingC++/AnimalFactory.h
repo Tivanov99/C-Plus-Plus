@@ -29,7 +29,7 @@ private:
 		cout << "(1) - Lion\n";
 		cout << "(2) - Puma\n";
 		cout << "(3) - Tiger\n";
-		cout << "Write the code which is inside the brackets! - Example 2 - :  ";
+		cout << "Write the code which is inside the brackets! :  ";
 		int animalCode;
 		cin >> animalCode;
 		cout << "\n";

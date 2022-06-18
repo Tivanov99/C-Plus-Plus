@@ -45,5 +45,26 @@ public:
 			throw invalid_argument("(Invalid " + valueName + "! Not in range.)\n");
 		}
 	};
+	int ValidateMenuSelection(string value) {
+		try
+		{	
+			int userChoise = stoi(value);
+			if (userChoise < 1 || userChoise > 2) {
+				throw std::out_of_range("The number must be one of the ones shown above.\n");
+			}
+			return userChoise;
+		}
+		catch (const std::exception& ex)
+		{
+			string value = typeid(ex).name();
+			if (value._Equal("class std::out_of_range")) {
+				cout << ex.what();
+			}
+			else {
+				cout << "\nInvalid choice (Value must be number)! Try again!\n";
+			}
+		}
+		return -1;
+	};
 };
 
