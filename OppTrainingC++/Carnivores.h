@@ -4,6 +4,11 @@ using namespace std;
 #include <iostream>
 class Carnivores
 {
+private:
+	const string HuntingLevelMessage = "The hunting level is: ";
+	int Hunting;
+	int DangerLevel;
+
 public:
 	Carnivores(int huntingLevel, int dangerLevel)
 	{
@@ -13,16 +18,13 @@ public:
 	void ShowHuntingLevel() {
 		switch (Hunting)
 		{
-		case 0: cout << "Low\n"; break;
-		case 1: cout << "Medium\n"; break;
-		case 2: cout << "High\n"; break;
-		case 3: cout << "Professional\n"; break;
+		case 0: cout << HuntingLevelMessage << "Low\n"; break;
+		case 1: cout << HuntingLevelMessage << "Medium\n"; break;
+		case 2: cout << HuntingLevelMessage << "High\n"; break;
+		case 3: cout << HuntingLevelMessage << "Professional\n"; break;
 		default:
 			cout << "Something wrong with hunting level\n"; break;
 		}
 	};
-
-private:
-	int Hunting;
-	int DangerLevel;
+	virtual void GetDangerLevel() = 0;
 };

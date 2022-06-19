@@ -8,6 +8,8 @@ using namespace std;
 
 int main()
 {
+	Carnivores carni{ 1,2 };
+
 }
 
 
