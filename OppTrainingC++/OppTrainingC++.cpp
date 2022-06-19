@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	Carnivores carni{ 1,2 };
-
+	//CarnivoresAnimal asd{ "milen",12,200,2,2,true,1,2 };
 }
 
 

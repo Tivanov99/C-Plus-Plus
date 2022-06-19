@@ -30,4 +30,6 @@ public:
 		cout << "The danger level is: " << DangerLevel;
 	};
 
+	virtual void ShowFavouriteFood() = 0;
+	virtual void ShowHuntingType() = 0;
 };
