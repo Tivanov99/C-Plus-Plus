@@ -1,15 +1,14 @@
 #pragma once
-#include "Animal.h"
-#include "Carnivores.h"
+#include "CarnivoresAnimal.h"
 class Puma :
-	public Animal, public  
+	public CarnivoresAnimal
 {
 public:
 	Puma(string name, int age, double weight, int huntingLevel = 1,
 		int levelOfDanger = 60, bool isVaccinated = false,
 		int happyLevel = 40, int foodLevel = 30)
-		:Animal(name, age, weight, happyLevel, foodLevel, isVaccinated)
-		, Carnivores(huntingLevel, levelOfDanger) {
+		:CarnivoresAnimal(name, age, weight, happyLevel, foodLevel, isVaccinated,
+			huntingLevel, levelOfDanger) {
 	};
 	void GetAnimalType() {
 		cout << "The " << Name << " is " << "Puma";

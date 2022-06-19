@@ -8,13 +8,6 @@ using namespace std;
 
 int main()
 {
-	vector<Animal> animals;
-	Puma puma{ "kotka",5,250,1 };
-
-	animals.push_back(puma);
-
-		/*CatFamilyService service;
-		service.CreateLion();*/
 }
 
 
