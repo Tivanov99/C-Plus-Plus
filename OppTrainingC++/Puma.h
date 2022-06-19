@@ -17,8 +17,8 @@ public:
 		cout << "Roar\n";
 	}
 	void ShowFavouriteFood() {
-
-	};
+		cout << "Puma's main diet is ungulates such as deer, horses, elk, cattle and sheep.";
+	}
 	void ShowHuntingType() {
 		cout << "Puma's hunting type is the following: Waiting his booty in the bush and when she is distracted jumps and drives nails and teeth into it.";
 	}
