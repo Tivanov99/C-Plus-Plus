@@ -26,5 +26,7 @@ public:
 			cout << "Something wrong with hunting level\n"; break;
 		}
 	};
-	virtual void GetDangerLevel() = 0;
+	 void ShowDangerLevel() {
+		 cout << "The danger level is: " << DangerLevel;
+	};
 };
