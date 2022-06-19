@@ -1,15 +1,20 @@
 #include "AnimalFactory.h"
 #include "Menu.h"
+#include <vector>
+#include "Animal.h"
+#include "Puma.h"
 using namespace std;
 
 
 int main()
 {
-	Menu menu;
-	menu.MainMenu();
-	/*CatFamilyService service;
-	service.CreateLion();*/
+	vector<Animal> animals;
+	Puma puma{ "kotka",5,250,1 };
 
+	animals.push_back(puma);
+
+		/*CatFamilyService service;
+		service.CreateLion();*/
 }
 
 

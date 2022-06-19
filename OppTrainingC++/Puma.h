@@ -2,7 +2,7 @@
 #include "Animal.h"
 #include "Carnivores.h"
 class Puma :
-	public Animal, public Carnivores
+	public Animal, public  
 {
 public:
 	Puma(string name, int age, double weight, int huntingLevel = 1,
