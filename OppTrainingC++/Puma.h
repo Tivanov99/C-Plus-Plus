@@ -16,5 +16,11 @@ public:
 	void MakeSpecialSound() {
 		cout << "Roar\n";
 	}
+	void ShowFavouriteFood() {
+
+	};
+	void ShowHuntingType() {
+		cout << "Puma's hunting type is the following: Waiting his booty in the bush and when she is distracted jumps and drives nails and teeth into it.";
+	}
 };
 
