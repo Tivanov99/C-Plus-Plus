@@ -2,14 +2,14 @@
 #include "Animal.h"
 #include "CarnivoresAnimal.h"
 class Tiger :
-    public CarnivoresAnimal
+	public CarnivoresAnimal
 {
 public:
 	Tiger(string name, int age, double weight, int huntingLevel = 2,
 		int levelOfDanger = 80, bool isVaccinated = false,
 		int happyLevel = 30, int foodLevel = 40)
 		:CarnivoresAnimal(name, age, weight, happyLevel, foodLevel, isVaccinated,
-		huntingLevel, levelOfDanger) {
+			huntingLevel, levelOfDanger) {
 	};
 	void ShowAnimalType() {
 		cout << "The " << Name << " is " << "Tiger";
@@ -18,10 +18,10 @@ public:
 		cout << "Roar\n";
 	}
 	void ShowFavouriteFood() {
-		cout << "Puma's main diet is ungulates such as deer, horses, elk, cattle and sheep.";
+		cout << "Tiger's main diet is ungulates such as deer, horses, elk, cattle and sheep.";
 	}
 	void ShowHuntingType() {
-		cout << "Puma's hunting type is the following: Waiting his booty in the bush and when she is distracted jumps and drives nails and teeth into it.";
+		cout << "Tiger's hunting type is the following: Waiting his booty in the bush and when she is distracted jumps and drives nails and teeth into it.";
 	}
 };
 
