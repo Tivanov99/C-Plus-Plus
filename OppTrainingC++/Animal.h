@@ -64,7 +64,7 @@ public:
 			}
 		}
 	}
-	virtual void GetAnimalType() = 0;
+	virtual void ShowAnimalType() = 0;
 	virtual void MakeSpecialSound()= 0;
 	~Animal() {
 

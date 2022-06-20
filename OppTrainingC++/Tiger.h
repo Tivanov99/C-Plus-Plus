@@ -11,7 +11,7 @@ public:
 		:Animal(name, age, weight, happyLevel, foodLevel, isVaccinated)
 		, Carnivores(huntingLevel, levelOfDanger) {
 	};
-	void GetAnimalType() {
+	void ShowAnimalType() {
 		cout << "The " << Name << " is " << "Tiger";
 	}
 	void MakeSpecialSound() {

@@ -10,7 +10,7 @@ public:
 		:CarnivoresAnimal(name, age, weight, happyLevel, foodLevel, isVaccinated,
 			huntingLevel, levelOfDanger) {
 	};
-	void GetAnimalType() {
+	void ShowAnimalType() {
 		cout << "The " << Name << " is " << "Puma";
 	}
 	void MakeSpecialSound() {
