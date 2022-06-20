@@ -12,11 +12,6 @@ public:
 	{
 
 	}
-	/*void ShowAnimalType() {
-
-	};
-	void MakeSpecialSound() {
-
-	};*/
+	
 };
 

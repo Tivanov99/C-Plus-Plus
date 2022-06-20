@@ -25,6 +25,9 @@
     <Filter Include="Header Files\Validator">
       <UniqueIdentifier>{78aa1c4b-8a05-40a1-b4cd-fd8c330a3354}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\HerbivorousAnimals">
+      <UniqueIdentifier>{6db1b855-b7e1-4c13-98e7-d47ea0ab2cec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OppTrainingC++.cpp">
@@ -69,6 +72,9 @@
     <ClCompile Include="Herbivorous.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Deer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h">
@@ -101,11 +107,14 @@
     <ClInclude Include="CarnivoresAnimal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HerbivorousAnimals.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Herbivorous.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HerbivorousAnimals.h">
+      <Filter>Header Files\HerbivorousAnimals</Filter>
+    </ClInclude>
+    <ClInclude Include="Deer.h">
+      <Filter>Header Files\HerbivorousAnimals</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
