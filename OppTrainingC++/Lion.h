@@ -18,7 +18,7 @@ public:
 	void MakeSpecialSound() {
 		cout << "Roar\n";
 	}
-	void ShowFavouriteFood() {
+	void ShowFavoriteMeat() {
 		cout << "Lion's main diet is ungulates such as deer, horses, elk, cattle and sheep.";
 	}
 	void ShowHuntingType() {

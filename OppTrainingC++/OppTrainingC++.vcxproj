@@ -144,6 +144,8 @@
     <ClCompile Include="Carnivores.cpp" />
     <ClCompile Include="CarnivoresAnimal.cpp" />
     <ClCompile Include="CatFamilyService.cpp" />
+    <ClCompile Include="Herbivorous.cpp" />
+    <ClCompile Include="HerbivorousAnimals.cpp" />
     <ClCompile Include="Hunting.cpp" />
     <ClCompile Include="Lion.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -158,6 +160,8 @@
     <ClInclude Include="Carnivores.h" />
     <ClInclude Include="CarnivoresAnimal.h" />
     <ClInclude Include="CatFamilyService.h" />
+    <ClInclude Include="Herbivorous.h" />
+    <ClInclude Include="HerbivorousAnimals.h" />
     <ClInclude Include="Lion.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Puma.h" />
