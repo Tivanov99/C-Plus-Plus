@@ -8,10 +8,15 @@ class HerbivorousAnimals :
 public:
 	HerbivorousAnimals(string name, int age, double weight, int happyLevel,
 		int foodLevel, bool isVaccinated = false)
-		:Animal(name,age,weight,happyLevel,foodLevel,isVaccinated)
+		:Animal(name, age, weight, happyLevel, foodLevel, isVaccinated)
 	{
 
 	}
+	/*void ShowAnimalType() {
 
+	};
+	void MakeSpecialSound() {
+
+	};*/
 };
 
